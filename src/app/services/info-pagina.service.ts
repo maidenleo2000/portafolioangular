@@ -30,7 +30,7 @@ export class InfoPaginaService {
       (resp: infoPagina) => {
         this.cargada = true;
         this.info = resp;
-        console.log(resp);
+        // console.log(resp);
       }
     )
    }
@@ -40,8 +40,8 @@ export class InfoPaginaService {
     this.http.get('https://angular-html-3cf77-default-rtdb.firebaseio.com/equipo.json')
     .subscribe( (resp) => {
       this.equipo = resp;
-      console.log('Desde cargarEquipo Firebase')
-      console.log(resp);
+      // console.log('Desde cargarEquipo Firebase')
+      // console.log(resp);
 
     } )
    }
